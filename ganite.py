@@ -48,7 +48,7 @@ def ganite (train_x, train_t, train_y, test_x, parameters):
   no, dim = train_x.shape
 
   # Reset graph
-  tf.reset_default_graph()
+  tf.compat.v1.reset_default_graph()
 
   ## 1. Placeholder
   # 1.1. Feature (X)
